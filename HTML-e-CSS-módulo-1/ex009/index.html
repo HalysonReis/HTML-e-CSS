@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>aumente e diminua o navegador</p>
+    <picture>
+        <source media="(max-width: 1250px)" srcset="imagens/paisagens-650.jpg" type="image/jpg">
+        <source media="(max-width: 1550px)" srcset="imagens/paisagens-1200.jpg" type="image/jpg">
+        <img src="imagens/paisagens-1500.jpg" alt="Imagem flexivel G">
+    </picture>
+    <h1>Reproduzindo áudio</h1>
+    <p>aprendendo a colocar áudio</p>
+    <audio src="midia/A Fool_s Theme - Brian Bolger.mp3" controls autoplay></audio>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Allégro - Emmit Fenn.mp3" type="audio/mpeg">
+        <source src="midia/Allégro - Emmit Fenn.ogg" type="audio/ogg">
+        <p>o áudio nao está funciomando</p>
+    </audio>
+    
+</body>
+</html>
