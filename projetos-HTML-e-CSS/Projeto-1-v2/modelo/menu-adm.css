@@ -56,6 +56,24 @@
     font-weight: 600;
 }
 
+.nav-item .submenu {
+    margin-top: 15px;
+    position: absolute;
+    background-color: white;
+    padding: 10px 5px;
+    gap: 15px;
+    text-transform: capitalize;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    display: none;
+    border-radius: 3px;
+    transition: all 5s ease-in-out;
+}
+
+.nav-item:hover .submenu {
+    display: block;
+    transition: all 5s ease-in-out;
+}
+
 .nav-item::after{
     content: "";
     background-color: #FF3877;
