@@ -42,6 +42,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 3;
 }
 
 .nav-list {
@@ -55,11 +56,12 @@
 .nav-item {
     font-size: 1.2rem;
     font-weight: 600;
+    height: 45px;
 }
 
 
 
-.nav-item::after{
+.nav-item a:after{
     content: "";
     background-color: #FF3877;
     height: 3px;
@@ -70,7 +72,7 @@
 
 }
 
-.nav-item:hover::after{
+.nav-item:hover a::after{
     width: 100%;
 }
 
@@ -79,12 +81,13 @@
     text-decoration: none;
 }
 
+
 .submenu {
     display: none;
 }
 
 .nav-item .submenu {
-    padding-top: 15px;
+    margin-top: 10px;
     position: absolute;
     background-color: white;
     padding: 10px 5px;
@@ -93,6 +96,10 @@
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
     border-radius: 3px;
     transition: 5s;
+}
+
+.nav-item .submenu a::after{
+    display: none;
 }
 
 .nav-bar .btn-login {
@@ -110,9 +117,9 @@
     text-decoration: none;
 }
 
+
 .nav-item:hover .submenu {
     display: block;
-    transition: 5s;
 }
 
 .sandwich-menu {
@@ -178,7 +185,7 @@
         width: 280px;
         text-align: center;
     }
-    .open .nav-list .nav-item::after{
+    .open .nav-list .nav-item a::after{
         display: none;
     }
 
@@ -187,9 +194,13 @@
     }
     .open .nav-list .nav-item:hover .submenu {
         position: initial;
+        height: auto;
         background-color: transparent;
-        display: block;
-        gap: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5px;
         box-shadow: none;
         border-radius: 0px;
         border-top: 2px solid rgba(0, 0, 0, 0.301);

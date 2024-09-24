@@ -16,7 +16,7 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 150px;
+    gap: 75px;
     width: 100%;
     height: auto;
     padding: 10px;
@@ -43,8 +43,8 @@
 }
 
 .up .up-img {
-    width: 350px;
-    height: 200px;
+    width: 320px;
+    height: 180px;
 }
 
 .uploads .btn-editar {
@@ -56,7 +56,6 @@
 .box .btns {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -110,4 +109,81 @@
     font-weight: 600;
     font-size: 1.3rem;
     text-transform: uppercase;
+}
+
+
+@media(max-width: 1050px) {
+    .box .up-imgs {
+        gap: 10px;
+    }
+    
+    
+    .up-imgs .uploads {
+        width: 240px;
+        height: 200px;
+    }
+    .uploads .up-img {
+        width: 220px;
+        height: 120px;
+    }
+
+    .uploads .btn-editar {
+        width: 25px;
+        height: auto;
+    }
+
+    .uploads .btn-editar .editar {
+        width: 100%;
+    }
+}
+
+@media(max-width: 650px) {
+
+
+    .up-imgs .uploads {
+        width: 270px;
+        height: 130px;
+
+        flex-direction: row;
+    }
+
+    .uploads .up-img {
+        width: 200px;
+        height: 110px;
+    }
+
+    .uploads .btn-editar {
+        width: 25px;
+        height: auto;
+    }
+
+    .uploads .btn-editar .editar {
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 1.4rem;
+    }
+
+    .voltar .btn-voltar {
+        width: 30px;
+    }
+
+    .box .btns {
+        padding-right: 10px;
+    }
+
+    .btns .btn-cancelar-salvar {
+        gap: 5px;
+    }
+
+    .btn-cancelar-salvar .btn {
+        width: 110px;
+        height: 30px;
+        padding: 0px 10px;
+    }
+
+    .btn-cancelar-salvar .btn a {
+        font-size: 1rem;
+    }
 }
