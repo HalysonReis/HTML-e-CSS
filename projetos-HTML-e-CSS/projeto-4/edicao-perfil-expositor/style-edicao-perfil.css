@@ -142,13 +142,21 @@
     margin-left: 8px;
 }
 
-.list-pagamento {
+.sobre .content-pagamento .list-pagamento {
     list-style: disc;
     margin-left: 5px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    /* background-color: #5CB74A; */
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-.list-pagamento li {
+.sobre .content-pagamento .list-pagamento li {
     font-size: 0.8rem;
+    text-decoration: dashed;
 }
 
 .info-pessoais {
