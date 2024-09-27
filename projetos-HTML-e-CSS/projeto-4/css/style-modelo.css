@@ -2,17 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('menu-adm.css');
 
+body {
+    width: 100vw;
+    min-height: calc(100vh - 110px);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    /* overflow: hidden; */
 }
 
 .principal {
     width: 100vw;
-    height: 90vh;
+    min-height: calc(100vh - 130px);
     z-index: 1;
 }
 
@@ -36,29 +40,29 @@
     backdrop-filter: blur(20px);    
 } */
 
-.bolas-fundo {
+/* .bolas-fundo {
     width: 100vw;
-    height: 90vh;
+    min-height: calc(100vh - 130px);
     position: relative;
     top: -90vh;
     z-index: -3;
-}
+} */
 
-.bolas-fundo .bola-verde1 {
+.bola-verde1 {
     position: absolute;
     left: -40px;
-    top: 6vh;
+    top: 15vh;
     z-index: -3;
 }
 
-.bolas-fundo .bola-verde2 {
+.bola-verde2 {
     position: absolute;
     right: -50px;
-    top: 6vh;
+    top: 15vh;
     z-index: -3;
 }
 
-.bolas-fundo .bola-rosa {
+.bola-rosa {
     position: absolute;
     right: -100px;
     bottom: -100px;
