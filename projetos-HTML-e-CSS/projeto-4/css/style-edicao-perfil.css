@@ -11,7 +11,8 @@
 .card {
     background-color: #F4F4F4;
     border-radius: 10px;
-    width: 1000px;
+    max-width: 1000px;
+    width: auto;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -79,12 +80,13 @@
     width: 55%;
     height: auto;
     border-right: 3px solid rgba(0, 0, 0, 0.15);
+    padding-left: 15px;
 }
 
 .content {
     margin-top: 10px;
     width: 200px;
-    padding-left: 15px;
+    
 }
 
 .content-nome {
@@ -104,7 +106,7 @@
 
 .content-sobre-empresa {
     gap: 10px;
-    width: 500px;
+    width: 90%;
     margin-top: 10px;
 }
 
@@ -114,6 +116,7 @@
 
 .title-sobre-empresa {
     display: inline;
+
 }
 
 .btn-empresa {
@@ -123,6 +126,7 @@
 
 .content-text {
     font-size: 0.6rem;
+    width: 100%;
 }
 
 
@@ -148,28 +152,25 @@
 }
 
 .sobre .content-pagamento .list-pagamento {
-    list-style: disc;
+    list-style: none;
     margin-left: 5px;
     width: 180px;
     display: flex;
     align-items: center;
-    /* background-color: #5CB74A; */
-    /* justify-content: center; */
     flex-wrap: wrap;
     gap: 10px;
 }
 
 .sobre .content-pagamento .list-pagamento li {
     font-size: 0.8rem;
-    text-decoration: dashed;
 }
 
 .info-pessoais {
     width: 45%;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10px 25px;
+    padding: 15px 25px;
 }
 
 .content-pessoais {
@@ -187,6 +188,8 @@
 }
 
 .content-galeria {
+    max-width: 500px;
+    width: 100%;
     margin-top: 15px;
     padding: 10px 0px;
     margin-bottom: 5px;
@@ -199,7 +202,8 @@
 }
 
 .galeria {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -210,6 +214,64 @@
 }
 
 .img-galeria {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1050px) {
+    .name {
+        font-size: 1rem;
+    }
+
+    .img-btn-editar {
+        width: 10px;
+    }
+
+    .content-title {
+        font-size: 0.8rem;
+    }
+    .content-text {
+        font-size: 0.7rem;
+    }
+
+    .list-pagamento li {
+        font-size: 0.6rem;
+    }
+
+    .title-galeria {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .informacoes {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0px;
+    }
+    .foto-perfil {
+        width: 100px;
+        height: 100px;
+        margin-top: -25px;
+    }
+
+    .foto-perfil .img-perfil {
+        width: 90px;
+    }
+
+    .sobre {
+        width: 100%;
+        border: none;
+    }
+
+    .info-pessoais {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .content-nome {
+        margin-left: 0px;
+    }
 }
