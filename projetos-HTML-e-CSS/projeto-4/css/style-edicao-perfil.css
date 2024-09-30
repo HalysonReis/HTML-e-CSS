@@ -245,6 +245,10 @@
 }
 
 @media screen and (max-width: 650px) {
+    body {
+        overflow: scroll;
+    }
+
     .informacoes {
         flex-direction: column;
         align-items: center;
