@@ -123,7 +123,7 @@
     background-image: url("../img/Lupa.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 50%;
 }
 
 .login {
@@ -201,12 +201,6 @@
         height: 45px;
         background-color: #0D592E;
         display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url("../img/Lupa.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 70%;
     }
 
     .pesquisar-login .pesquisar .input {
@@ -318,7 +312,7 @@
         background-image: url("../img/Lupa.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: 70%;
+        background-size: 50%;
     }
 
     .pesquisa .input {
