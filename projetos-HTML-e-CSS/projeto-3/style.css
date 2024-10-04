@@ -3,6 +3,35 @@
 @import url('menu/menu.css');
 @import url('carrosel.css');
 
+:root {
+    --color-artesanato: rgba(13, 71, 161, 0.30);
+    --color-artesanato-bg: rgba(13, 72, 161, 0.6);
+
+    --color-antiguidade: rgba(255, 182, 0, 0.30);
+    --color-antiguidade-bg: rgba(255, 182, 0, 0.60);
+
+    --color-colecionismo: rgba(114, 9, 183, 0.30);
+    --color-colecionismo-bg: rgba(114, 9, 183, 0.60);
+
+    --color-cosmetica: rgba(217, 3, 104, 0.30);
+    --color-cosmetica-bg: rgba(217, 3, 104, 0.60);
+
+    --color-gastronomia: rgba(251, 86, 7, 0.30);
+    --color-gastronomia-bg: rgba(251, 86, 7, 0.60);
+
+    --color-literatura: rgba(23, 128, 118, 0.30);
+    --color-literatura-bg: rgba(23, 128, 118, 0.60);
+
+    --color-moda: rgba(15, 76, 92, 0.30);
+    --color-moda-bg: rgba(15, 76, 92, 0.60);
+
+    --color-planta: rgba(0, 128, 0, 0.30);
+    --color-planta-bg: rgba(0, 128, 0, 0.60);
+
+    --color-sustenta: rgba(108, 88, 76, 0.30);
+    --color-sustenta-bg: rgba(108, 88, 76, 0.60);
+}
+
 /* propriedades padroes */
 * {
     margin: 0;
@@ -46,6 +75,7 @@ main {
 }
 
 main .text {
+    max-width: 1000px;
     margin: auto;
     text-align: center;
 }
@@ -174,8 +204,10 @@ main .categoria #fundo-categoia {
 
 .categoria .categorias {
     background-color: #F8F8F8;
+    max-width: 1100px;
     width: 100%;
     height: auto;
+    margin: auto;
     border-radius: 20px;
     margin-top: 500px;
     display: block;
@@ -195,22 +227,26 @@ main .categoria #fundo-categoia {
 }
 
 .categoria .categorias .item {
-    width: 100px;
+    width: 120px;
     height: 150px;
     text-align: center;
     margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     transition: all 0.5s ease;
 }
 
 .item .img-fundo {
     border-radius: 50%;
-    width: 100%;
+    width: 100px;
     height: 100px;
     background-color: rgba(13, 71, 161, 0.30);
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
 }
 
 
@@ -221,43 +257,86 @@ main .categoria #fundo-categoia {
 .item p {
     margin-top: 20px;
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 1em;
+    width: 155px;
 }
 
 /* mudando cor categoria */
 
 .item .artesanato {
-    background-color: rgba(13, 71, 161, 0.30);
+    background-color: var(--color-artesanato);
 }
+
+.item .artesanato:hover {
+    background-color: var(--color-artesanato-bg);
+}
+
 .item .antiguidade {
-    background-color: rgba(255, 182, 0, 0.30);
+    background-color: var(--color-antiguidade);
 }
+
+.item .antiguidade:hover {
+    background-color: var(--color-antiguidade-bg);
+}
+
 .item .colecionismo {
-    background-color: rgba(114, 9, 183, 0.30);
+    background-color: var(--color-colecionismo);
 }
+
+.item .colecionismo:hover {
+    background-color: var(--color-colecionismo-bg);
+}
+
 .item .cosmetica {
-    background-color: rgba(217, 3, 104, 0.30);
+    background-color: var(--color-cosmetica);
 }
+
+.item .cosmetica:hover {
+    background-color: var(--color-cosmetica-bg);
+}
+
 .item .gastronomia {
-    background-color: rgba(251, 86, 7, 0.30);
+    background-color: var(--color-gastronomia);
 }
+
+.item .gastronomia:hover {
+    background-color: var(--color-gastronomia-bg);
+}
+
 .item .literatura {
-    background-color: rgba(23, 128, 118, 0.30);
+    background-color: var(--color-literatura);
 }
+
+.item .literatura:hover {
+    background-color: var(--color-literatura-bg);
+}
+
 .item .moda {
-    background-color: rgba(15, 76, 92, 0.30);
+    background-color: var(--color-moda);
 }
+
+.item .moda:hover {
+    background-color: var(--color-moda-bg);
+}
+
 .item .planta {
-    background-color: rgba(0, 128, 0, 0.30);
+    background-color: var(--color-planta);
 }
+
+.item .planta:hover {
+    background-color: var(--color-planta-bg);
+}
+
 .item .sustenta {
-    background-color: rgba(108, 88, 76, 0.30);
+    background-color: var(--color-sustenta);
+}
+
+.item .sustenta:hover{
+    background-color: var(--color-sustenta-bg);
 }
 
 .item .img-fundo:hover {
-    margin-top: -10px;
-    border: 2px solid #000;
-    background-color: #ffcb45;
+    margin-top: -15px;
 }
 
 /* expositor */
@@ -310,99 +389,101 @@ main .categoria #fundo-categoia {
     flex-wrap: wrap;
 }
 
-.expositores .expositor-lista .expositor {
+.expositor {
+    /* background-color: rgb(191, 225, 255); */
     width: 200px;
-    height: 400px;
-    display: block;
-    margin: 30px;
-    transition: all 0.5s ease;
+    height: 430px;
+    border-radius: 10% 10% 0px 0px;
+    position: relative;
 }
 
-.expositores .expositor-lista .expositor:hover {
-    margin-top: -10px;
-}
-
-.expositor .imagem {
+.imagem-expositor{
     width: 100%;
     height: 200px;
     border-radius: 50%;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #F8F8F8;
-    position: relative;
+    position: absolute;
+    z-index: 2;
+    transition: all 1s ease;
 }
 
-.expositor .imagem img {
+.imagem-expositor img {
     width: 90%;
 }
 
-.expositor .informacoes-expositor {
-    width: 100%;
-    height: auto;
+.informacoes-expositor {
     background-color: #F8F8F8;
-    margin-top: -90px;
-    padding-top: 100px;
-    transition: all 0.5s ease;
-}
-
-.expositores .expositor-lista .expositor:hover .informacoes-expositor {
-    background-color: #05A09C;
-}
-
-.expositor .informacoes-expositor h3 {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-.informacoes-expositor #informacao {
-    width: 100%;
-    height: auto;
-    padding: 5px 0;
-    border-top: 2px solid #000;
-    border-bottom: 2px solid #000;
-    display: block;
     text-align: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 0px;
+    transition: all 1s ease;
 }
 
-/* cores das ruas */
+.expositor:hover .informacoes-expositor,
+.expositor:hover .imagem {
+    margin-top: -15px;
+    background-color: #FDF148;
+}
+
+.informacoes-expositor h3 {
+    margin-top: 80px;
+    font-size: 1.1rem;
+}
+
+#informacao {
+    padding: 0;
+    width: 100%;
+    border-top: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+
 #informacao .rua::after {
     content: "";
     position: relative;
-    top: -10px;
+    top: -13px;
     left: 8px;
     display: inline;
-    border-bottom: 5px solid #FDF148;
+    border-bottom: 10px solid #FDF148;
     background-color: none;
-    padding-left: 50px;
-}
-#informacao #rua2::after {
-    border-bottom: 5px solid #FC671D;
-}
-#informacao #rua3::after {
-    border-bottom: 5px solid #90C470;
-}
-#informacao #rua4::after {
-    border-bottom: 5px solid #B313FF;
+    padding-left: 55px;
 }
 
-.informacoes-expositor .botao {
-    padding: 10px;
-    margin: 20px 0;
-}
-
-.informacoes-expositor .botao button {
-    border: none;
-    outline: none;
-    width: 90px;
-    height: 30px;
-    font-size: 1.5em;
+.text-info {
+    font-size: 1rem;
     font-weight: bold;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text-info span {
+    font-weight: 500;
+}
+
+.botao {
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.botao button {
+    border: none;
     background-color: #F7F183;
-    box-shadow: 0px 0px 10px -5px #000;
+    padding: 5px 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
 
 .expositores .ver-mais-expositor {
