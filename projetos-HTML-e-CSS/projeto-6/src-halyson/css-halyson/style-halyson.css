@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('inicio-halyson.css');
+@import url('sobre-halyson.css');
+@import url('contatos-halyson.css');
+@import url('projetos_halyson.css');
+@import url('skils-halyson.css');
+@import url('rodape-halyson.css');
+
+:root {
+    --color-branca-halyson: #ffffff;
+    --color-preta-halyson: #000000;
+
+    --color-fundo-halyson: #FDF9EF;
+
+    --color-vermelha-halyson: #8B0000;
+    --color-vermelha-2-halyson: #ff0000;
+    --color-vermelha-3-halyson: #4E0707;
+    --color-azul-halyson: #003CFF;
+    --color-verde-halyson: #00FF55;
+}
+
+/* .corpo-halyson {
+    width: 100%;
+    max-height: 100%;
+    background-color: #000000;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.cabecalho-halyson {
+    position: sticky;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+    background-color: #003CFF;
+}
+
+.logo-halyson {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.img-logo-halyson {
+    width: 100%;
+}
+
+.nave-halyson {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.lista-halyson {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    list-style: none;
+}
+
+.item-halyson {
+    font-size: 1.3rem;
+}
+
+.banner-halyson {
+    width: 100%;
+    height: calc(100vh - 100px);
+    
+}
