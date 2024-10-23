@@ -1,12 +1,12 @@
 .skills-halyson {
-    background-color: black;
+    background-color: var(--color-preta-halyson);
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
 .tittle-skills-halyson {
-    color: white;
+    color: var(--color-branca-halyson);
     padding: 20px 30px;
 }
 
@@ -14,16 +14,14 @@
     width: 500px;
     height: auto;
     margin-left: 150px;
-    padding: 10px;
-    background-color: rgb(0, 145, 145);
+    padding: 20px 10px;
 }
 
 .card-skills-halyson {
     display: flex;
     flex-direction: row;
     align-items: center;
-    
-    background-color: rgb(255, 145, 0);
+    margin-top: -20px;
 }
 
 .progress-halyson {
@@ -32,18 +30,29 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: beige;
+    margin-right: 50px;
 }
 
 .ball-halyson {
     width: 13px;
     height: 15px;
     border-radius: 50%;
+    z-index: 3;
+    background-color: var(--color-verde-halyson);
+}
+
+.ball-inicio-halyson {
     background-color: var(--color-azul-halyson);
 }
 
+.ball-fim-halyson {
+    background-color: var(--color-vermelha-2-halyson);
+}
+
 .pipe-halyson {
-    width: 5px;
+    width: 3px;
     height: 100%;
-    background-color: white;
+    margin-top: -5px;
+    z-index: 1;
+    background-color: var(--color-branca-halyson);
 }

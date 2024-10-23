@@ -2,11 +2,11 @@
     width: 100%;
     height: 200px;
     padding: 20px 50px;
-    background-color: black;
+    background-color: var(--color-preta-halyson);
 }
 
 .tittle-contato-halyson {
-    color: white;
+    color: var(--color-branca-halyson);
 }
 
 .content-halyson {
@@ -32,11 +32,11 @@
 }
 
 .icons-rede-halyson {
-    color: white;
+    color: var(--color-branca-halyson);
     font-size: 1.5rem;
 }
 
 .text-contato-halyson {
-    color: white;
+    color: var(--color-branca-halyson);
     font-size: 1.3rem;
 }

@@ -17,7 +17,6 @@
 
     --color-vermelha-halyson: #8B0000;
     --color-vermelha-2-halyson: #ff0000;
-    --color-vermelha-3-halyson: #4E0707;
     --color-azul-halyson: #003CFF;
     --color-verde-halyson: #00FF55;
 }
@@ -51,5 +50,5 @@
 
 .tittle-h4-halyson {
     font-size: 1.8rem;
-    color: white;
+    color: var(--color-branca-halyson);
 }
