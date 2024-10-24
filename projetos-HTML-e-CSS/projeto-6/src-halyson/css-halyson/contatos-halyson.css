@@ -1,6 +1,5 @@
 .contatos-halyson {
     width: 100%;
-    height: 200px;
     padding: 20px 50px;
     background-color: var(--color-preta-halyson);
 }
@@ -10,7 +9,7 @@
 }
 
 .content-halyson {
-    width: 60%;
+    width: 100%;
     /* background-color: white; */
     display: flex;
     align-items: center;

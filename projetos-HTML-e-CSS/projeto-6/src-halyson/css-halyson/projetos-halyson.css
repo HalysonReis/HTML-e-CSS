@@ -3,7 +3,7 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    padding: 30px 50px;
+    padding: 30px 20px;
 }
 
 .tittle-projeto-halyson {
@@ -31,7 +31,7 @@
 }
 
 .img-halyson {
-    width: 450px;
+    width: 100%;
     height: 600px;
     background-color: rgb(235, 235, 235);
 }
