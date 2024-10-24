@@ -74,17 +74,3 @@
     gap: 10px;
     padding: 0px 20px;
 }
-
-.btn-card-halyson {
-    outline: none;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    background-color: var(--color-vermelha-halyson);
-}
-
-.span-btn-halyson {
-    font-weight: 700;
-    color: var(--color-branca-halyson);
-}
