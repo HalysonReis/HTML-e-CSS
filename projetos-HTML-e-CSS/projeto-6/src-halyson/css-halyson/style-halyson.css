@@ -169,7 +169,8 @@
 
 @media screen and (max-width: 550px) {
     .banner-text-halyson {
-        width: 250px;
+        width: 300px;
+        height: 70px;
     }
 
     .text-banner-halyson {
